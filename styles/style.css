@@ -111,3 +111,21 @@
   font-weight: var(--wdth-text);
   margin-inline: 25px;
 }
+
+.button {
+  font-family: var(--accent-font);
+  font-size: 14px;
+  background-color: var(--background-color);
+  border: 2px solid var(--text-color);
+  align-self: flex-end;
+  margin-inline-end: 25px;
+  padding-block: 9px;
+  padding-inline: 17px;
+}
+
+
+.footer__button {
+  margin-block: 55px;
+  width: 335px;
+  min-height: 51px;
+}
