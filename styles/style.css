@@ -51,6 +51,7 @@
   width: 48.4vw;
   height: 100%;
   margin-block-start: 100px;
+  border: 2px solid var(--text-color);
 }
 
 .header {
@@ -75,25 +76,49 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
 }
 
 .theme-menu__button {
   cursor: pointer;
   background-color: transparent;
   text-align: center;
-  border: none;
   font-size: 14px;
 }
 
 .theme-menu__button:disabled {
-  opacity: 0.6;
+  pointer-events: none;
+  animation: menu-buttons 0.3s ease forwards;
 }
 
 .theme-menu__button:disabled::before {
   content: '▶';
+  position: relative;
   opacity: 0.6;
-  text-align: left;
+  animation: header-decor-element 1s ease-in-out infinite;
+}
+
+.theme-menu__button:hover {
+  animation: menu-buttons 0.3s ease forwards;
+}
+
+.theme-menu__button:focus-visible {
+  animation: menu-buttons 0.3s ease forwards;
+}
+
+.theme-menu__button:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: var(--text-color);
+  margin-top: 2px;
+  transition: width 0.3s;
+}
+
+.theme-menu__button:focus-visible::after {
+  width: 100%;
+  animation: menu-buttons 0.3s ease forwards;
 }
 
 .card {
@@ -112,20 +137,93 @@
   margin-inline: 25px;
 }
 
+.like {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-self: flex-end;
+}  
+
 .button {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
   font-family: var(--accent-font);
   font-size: 14px;
   background-color: var(--background-color);
   border: 2px solid var(--text-color);
-  align-self: flex-end;
-  margin-inline-end: 25px;
   padding-block: 9px;
-  padding-inline: 17px;
+  padding-inline-end: 17px;
+  padding-inline-start: 0;
+  margin-inline-end: 25px;
+  cursor: pointer;
 }
 
+.button__text {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  margin-inline-start: 17px;
+}
+
+.card__icon-button {
+  width: 39px;
+  height: 36px;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__icon-button:focus-visible {
+  animation: icon-focus 0.3s ease forwards;
+}
+
+.like-icon path {
+  fill: var(--text-color);
+  stroke: var(--text-color);
+}
 
 .footer__button {
   margin-block: 55px;
-  width: 335px;
+  min-width: 335px;
   min-height: 51px;
+}
+
+.button:focus-visible {
+  animation: button 0.3s ease forwards;
+}
+
+.button::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: var(--button-hover-background-color);
+  transition: transform 0.5s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+  mix-blend-mode: difference;
+}
+
+button:hover::after {
+  transform: scaleX(1);
+}
+
+.floppy {
+  width: 21px;
+  height: 21px;
+  stroke: var(--text-color);
+}
+
+@media (width <= 375px) {
+  .header,
+  .card {
+    width: 100vw;
+  }
 }

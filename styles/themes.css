@@ -17,6 +17,7 @@
     --transparent-gradient: transparent;
     --linear-gradient-color-first: #e7e7e7;
     --linear-gradient-color-second: #1a1a1a;
+    --button-hover-background-color: #fff;
 }
 
 :root.theme-dark {
@@ -28,9 +29,10 @@
     --text-color: #00cc14;
     --background-image: url(../images/background-dark.png);
     --repeat-gradient: #000;
-    --transparent-gradient: #00cc14;
+    --transparent-gradient: transparent;
     --linear-gradient-color-first: #007f0c;
     --linear-gradient-color-second: #004306;
+    --button-hover-background-color: #00cc14;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -43,6 +45,9 @@
         --text-color: #00cc14;
         --background-image: url(../images/background-dark.png);
         --repeat-gradient: #000;
-        --transparent-gradient: #00cc14;
+        --transparent-gradient: transparent;
+        --linear-gradient-color-first: #007f0c;
+        --linear-gradient-color-second: #004306;
+        --button-hover-background-color: #00cc14;
     }
 }
