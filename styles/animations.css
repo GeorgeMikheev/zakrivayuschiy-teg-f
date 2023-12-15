@@ -46,3 +46,16 @@
         border: 2px solid var(--text-color);
     }
 }
+
+@keyframes heart {
+    to {
+        transform: scale(1.5);
+        transform-origin: center;
+    }
+}
+
+@keyframes heart-sparks {
+    to {
+        opacity: 1;
+    }
+}
