@@ -12,12 +12,13 @@
     --wdth-text: 400;
     --background-color: #fff;
     --text-color: #000;
-    --background-image: url(../images/background-light.png);
     --repeat-gradient: #d3d3d3;
     --transparent-gradient: transparent;
     --linear-gradient-color-first: #e7e7e7;
     --linear-gradient-color-second: #1a1a1a;
     --button-hover-background-color: #fff;
+    --image-text: rgb(0, 0, 0, 0.5);
+    --image-text-shadow: #fff;
 }
 
 :root.theme-dark {
@@ -27,12 +28,13 @@
     --wdth-text: 465;
     --background-color: #000;
     --text-color: #00cc14;
-    --background-image: url(../images/background-dark.png);
     --repeat-gradient: #000;
     --transparent-gradient: transparent;
     --linear-gradient-color-first: #007f0c;
     --linear-gradient-color-second: #004306;
     --button-hover-background-color: #00cc14;
+    --image-text: rgb(0, 204, 20, 0.7);
+    --image-text-shadow: #000;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -43,11 +45,12 @@
         --wdth-text: 465;
         --background-color: #000;
         --text-color: #00cc14;
-        --background-image: url(../images/background-dark.png);
         --repeat-gradient: #000;
         --transparent-gradient: transparent;
         --linear-gradient-color-first: #007f0c;
         --linear-gradient-color-second: #004306;
         --button-hover-background-color: #00cc14;
+        --image-text: rgb(0, 204, 20, 0.7);
+        --image-text-shadow: #000;
     }
 }

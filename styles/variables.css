@@ -14,4 +14,6 @@
     --main-body-heart-color: #ff0000;
     --core-heart-color: #fff;
     --sparks-heart-color: #ff0000;
+    --image-text: rgb(0, 0, 0, 0.5);
+    --image-text-shadow: #fff;
 }
