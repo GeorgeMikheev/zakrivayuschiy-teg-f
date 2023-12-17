@@ -401,3 +401,70 @@
     height: 28px;
   }
 }
+
+.clear-list {
+  filter: sepia(100%);
+  transition: filter 0.5s;
+}
+
+.clear-list:hover {
+  filter: sepia(20%);
+}
+
+.monster {
+  filter: blur(7px);
+  transition: filter 0.7s;
+}
+
+.monster:hover {
+  filter: none;
+}
+
+.books {
+  filter: grayscale(10);
+  transition: filter 1.5s;
+}
+
+.books:hover {
+  filter: none;
+}
+
+.blues:hover {
+  animation: blues 5s linear forwards;
+  transition: filter 5s;
+}
+
+.Nastya {
+  filter: brightness(50%) contrast(140%);
+  transition: filter 1.5s;
+}
+
+.Nastya:hover {
+  filter: brightness(150%) contrast(110%);
+}
+
+.autumn {
+  filter: invert(80%) sepia(75%) contrast(60%);
+  transition: filter 1.5s;
+}
+
+.autumn:hover {
+  filter: none;
+}
+
+.brick {
+  filter: contrast(5%);
+  transition: filter 1.8s;
+}
+
+.brick:hover {
+  filter: none;
+}
+
+.chess {
+  transition: filter 3s;
+}
+
+.chess:hover {
+  filter: invert(100%);
+}
