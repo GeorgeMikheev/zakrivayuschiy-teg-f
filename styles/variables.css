@@ -2,8 +2,8 @@
 :root {
     --main-font: 'Inter';
     --accent-font: 'PressStart2P';
-    --wdth-title: 700;
-    --wdth-text: 400;
+    --wght-title: 700;
+    --wght-text: 400;
     --background-color: #fff;
     --text-color: #000;
     --repeat-gradient: #d3d3d3;
