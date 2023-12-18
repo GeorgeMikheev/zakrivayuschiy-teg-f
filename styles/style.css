@@ -278,15 +278,15 @@
   fill: var(--main-body-heart-color);
 }
 
-.is-liked > g:nth-child(1) > .heart > .core{
+.is-liked > g:nth-child(1) > .heart > .core {
   fill: var(--main-body-heart-color);
 }
 
-.is-liked > g:nth-child(1) > .heart > .main-body{
+.is-liked > g:nth-child(1) > .heart > .main-body {
   fill: var(--main-body-heart-color);
 }
 
-.is-liked > g:nth-child(1) > .heart > .contour{
+.is-liked > g:nth-child(1) > .heart > .contour {
   fill: var(--main-body-heart-color);
 }
 
@@ -298,15 +298,15 @@
   animation: heart-sparks 0.3s ease-in 0.3s;
 }
 
-.is-liked:hover > g:nth-child(1) > .heart > .core{
+.is-liked:hover > g:nth-child(1) > .heart > .core {
   fill: var(--main-body-heart-color);
 }
 
-.is-liked:hover > g:nth-child(1) > .heart > .main-body{
+.is-liked:hover > g:nth-child(1) > .heart > .main-body {
   fill: var(--main-body-heart-color);
 }
 
-.is-liked:hover > g:nth-child(1) > .heart > .contour{
+.is-liked:hover > g:nth-child(1) > .heart > .contour {
   fill: var(--main-body-heart-color);
   translate: fill 0.3s linear;
 }
