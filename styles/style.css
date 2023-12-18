@@ -151,6 +151,15 @@
   margin: 25px;
 }
 
+@supports ((text-stroke: 2px var(--image-text-shadow);) 
+  or (-webkit-text-stroke: 2px var(--image-text-shadow);)) {
+    .card__image-text {
+      text-stroke: 2px var(--image-text-shadow);
+      -webkit-text-stroke: 2px var(--image-text-shadow);
+      text-shadow: none;
+    }
+  }
+
 .card__image-img {
   position: relative;
   width: 100%;
