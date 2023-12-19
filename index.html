@@ -12,13 +12,14 @@
     <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="stylesheet" href="./styles/themes.css" />
     <link rel="icon" href="images/favicon.svg" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/favicon.svg">
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
     
     <header class="header">
-      <a href="#0"><h1 class="header__title">&lt;/HTML&gt;</h1></a>
-      <p class="header__text">закрывающий тег</p>
+      <a href="#0" class="header__logo">&lt;/HTML&gt;</a>
+      <h1 class="header__title">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <ul class="theme-menu__list">
           <li class="theme-menu__item">
@@ -49,20 +50,20 @@
       <article class="card">
         <h2 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
         <div class="card__image">
-          <p class="card__image-text">&lt;Je Veux &gt;</p>
-          <img class="card__image-img clear-list" src="./images/start.jpg" alt="Печатная машинка с чистым листом">
+          <span class="card__image-text">&lt;Je Veux &gt;</span>
+          <img class="card__image-img sepia" src="./images/start.jpg" alt="Печатная машинка с чистым листом">
         </div>
         <p class="card__text">Это было самое начало пути. 
           На этом этапе важно было проникнуться основами и настроиться на учёбу. 
           И, возможно, подумать, как новые знания могут повлиять на ваше будущее.
         </p>
-        <p class="card__text card__text-my-text">Я был в предвкушении начала учёбы.
+        <p class="card__text">Я был в предвкушении начала учёбы.
           Не мог дождаться, когда уже откроется первый спринт и,
           наконец то, можно будет приступить к постижению новых знаний
           и, уж тем-более, написать свою первую проектную работу.
         </p>
         <div class="like">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg class="like-icon"
               viewBox="0 0 39 36"
               width="39" 
@@ -98,7 +99,7 @@
                 </defs>
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button type="button" class="card__like-button button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -107,8 +108,8 @@
       <article class="card">
         <h2 class="card__title">1 спринт: Я — чистый лист</h2>
         <div class="card__image">
-          <p class="card__image-text">&lt;Know Your Enemy&gt;</p>
-          <img class="card__image-img monster" src="./images/monster.jpg" alt="Руки складываются в форме монстра.">
+          <span class="card__image-text">&lt;Know Your Enemy&gt;</span>
+          <img class="card__image-img blur" src="./images/monster.jpg" alt="Руки складываются в форме монстра.">
         </div>
         <p class="card__text">
           На первых этапах мы работали со страхами и сомнениями, которые часто испытывают новички. 
@@ -116,7 +117,7 @@
           чем боязнь куска бумаги. Часто за этим ощущением скрываются более глубокие вопросы: 
           с чего начать? а вдруг будет слишком сложно? что, если я не справлюсь?
         </p>
-        <p class="card__text card__text-my-text">
+        <p class="card__text">
           Ну вот, 18 сентября 2023 года открылся первый спринт.
           Как только появился доступ к урокам - я начал учиться. 
           На первый парах все шло легко, одни темы я схватывал на ходу,
@@ -125,7 +126,7 @@
           Это были гриды. 
         </p>
         <div class="like">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg class="like-icon"
               viewBox="0 0 39 36"
               width="39" 
@@ -161,7 +162,7 @@
                 </defs>
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button type="button" class="card__like-button button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -170,15 +171,15 @@
       <article class="card">
         <h2 class="card__title">1 спринт: А если не получится?</h2>
         <div class="card__image">
-          <p class="card__image-text">&lt;School Days&gt;</p>
-          <img class="card__image-img books" src="./images/books.jpg" alt="Днвушка сидит на книгах">
+          <span class="card__image-text">&lt;School Days&gt;</span>
+          <img class="card__image-img grayscale" src="./images/books.jpg" alt="Днвушка сидит на книгах">
         </div>
         <p class="card__text">Первый проект — позади!
           Но это всё ещё самое начало пути. 
           Радость могла быстро померкнуть и смениться ожиданием провала.
           Или вы, наоборот, могли вдохновиться успехами и поверить в себя.
         </p>
-        <p class="card__text card__text-my-text">
+        <p class="card__text">
           Первый проект сдан!<br>
           Это было неописуемо. "Неужели я сам, своими руками написал целую страницу?" 
           - примерно так я себя чувствовал тогда. Но сейчас я понимаю, что нет вообше никаких 
@@ -190,7 +191,7 @@
           Сдав этот проект - я уже с нетерпнием ждал, когда будет еще один!
         </p>
         <div class="like">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg class="like-icon"
               viewBox="0 0 39 36"
               width="39" 
@@ -226,7 +227,7 @@
                 </defs>
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button type="button" class="card__like-button button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -235,8 +236,8 @@
       <article class="card">
         <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
         <div class="card__image">
-          <p class="card__image-text">&lt;Still Got The Blues&gt;</p>
-          <img class="card__image-img blues" src="./images/still-got-the-blues.jpg" alt="Это я и моя гитара!">
+          <span class="card__image-text">&lt;Still Got The Blues&gt;</span>
+          <img class="card__image-img hue-rotate" src="./images/still-got-the-blues.jpg" alt="Это я и моя гитара!">
         </div>
         <p class="card__text">
           На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы понять, 
@@ -244,7 +245,7 @@
           А, может, вы вовсе и не подвержены перфекционизму и вместо того, чтобы сделать идеально, 
           старались просто сделать.
         </p>
-        <p class="card__text card__text-my-text">
+        <p class="card__text">
           Первый спринт позади, и вот, как будто бы, я вернулся в прошлое.
           Снова ожидание открытия уроков, снова теория и предвкушение второго проекта.
           И именно предвкушение мне и мешало на этой части пути. Мозгом я понимал, что теория нужна, 
@@ -254,7 +255,7 @@
           и старался тщательно читать и запоминать каждую тему и каждый урок.
         </p>
         <div class="like">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg class="like-icon"
               viewBox="0 0 39 36"
               width="39" 
@@ -290,7 +291,7 @@
                 </defs>
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button type="button" class="card__like-button button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -299,8 +300,8 @@
       <article class="card">
         <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
         <div class="card__image">
-          <p class="card__image-text">&lt;Strong Enough&gt;</p>
-          <img class="card__image-img Nastya" src="./images/Nastya.jpg" alt="Девушка в неоновых очках за ноутбуком">
+          <span class="card__image-text">&lt;Strong Enough&gt;</span>
+          <img class="card__image-img brightness-contrast" src="./images/Nastya.jpg" alt="Девушка в неоновых очках за ноутбуком">
         </div>
         <p class="card__text">
           Всё это время вы были не одиноки (хотя, возможно, иногда и чувствовали, 
@@ -309,7 +310,7 @@
           так не поддавался. Осваивать что-то новое легче, когда рядом есть единомышленники, 
           не правда ли?
         </p>
-        <p class="card__text card__text-my-text">
+        <p class="card__text">
           Второй проект был полной противоположностью первому. 
           Я так же написал его в последнюю неделю спринта. 
           Но это уже нельзя было назвать "спокойной работой". 
@@ -319,7 +320,7 @@
           Но это стоило того! Я успел сдать проект в срок и потом спокойно отдыхал на каникулах.
         </p>
         <div class="like">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg class="like-icon"
               viewBox="0 0 39 36"
               width="39" 
@@ -355,7 +356,7 @@
                 </defs>
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button type="button" class="card__like-button button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -364,14 +365,14 @@
       <article class="card">
         <h2 class="card__title">3 спринт: Обходные стратегии</h2>
         <div class="card__image">
-          <p class="card__image-text">&lt;Les feuilles mortes&gt;</p>
-          <img class="card__image-img autumn" src="./images/autumn.jpg" alt="Осунние листья">
+          <span class="card__image-text">&lt;Les feuilles mortes&gt;</span>
+          <img class="card__image-img invert-sepia-contrast" src="./images/autumn.jpg" alt="Осунние листья">
         </div>
         <p class="card__text">На этом курсе вы постоянно решали разные задачи. 
           В какой-то момент вам могло показаться, что решения просто иссякли. 
           Значит, пришло время посмотреть на задачу под другим углом.
         </p>
-        <p class="card__text card__text-my-text">
+        <p class="card__text">
           Ну вот... Я прорвался через "Посмотри в окно", 
           отдохнул на каникулах и снова был готов покарять вершины знаний. 
           На третьем спринте все шло по началу хорошо, но потом я снова встретился со
@@ -382,7 +383,7 @@
           подсказок сделать ничего не мог...
         </p>
         <div class="like">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg class="like-icon"
               viewBox="0 0 39 36"
               width="39" 
@@ -418,7 +419,7 @@
                 </defs>
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button type="button" class="card__like-button button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -427,8 +428,8 @@
       <article class="card">
         <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
         <div class="card__image">
-          <p class="card__image-text">&lt;Anather Brick In The Wall&gt;</p>
-          <img class="card__image-img brick" src="./images/brick.jpg" alt="Кирпичная стена">
+          <span class="card__image-text">&lt;Anather Brick In The Wall&gt;</span>
+          <img class="card__image-img contrast" src="./images/brick.jpg" alt="Кирпичная стена">
         </div>
         <p class="card__text">
           Во время учёбы часто возникает чувство, когда не знаешь, за что хвататься. 
@@ -436,7 +437,7 @@
           и жизнь не забыть пожить. В такие моменты очень нужна концентрация. 
           Вспомните, откуда вы её черпали.
         </p>
-        <p class="card__text card__text-my-text">
+        <p class="card__text">
           И вот настала пора писать проект "Сложно сосредоточиться". <br>
           Открыв макет я был в ужасе. Секцию с картинками надо писать гридами, и уже ясно, что
           написать все на угад не прокатит. Я оставил ее на конец. Работал размеренно, стараясь 
@@ -451,7 +452,7 @@
           заслуженный завтрак. Так я одолел своего злейшего врага.
         </p>
         <div class="like">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg class="like-icon"
               viewBox="0 0 39 36"
               width="39" 
@@ -487,7 +488,7 @@
                 </defs>
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button type="button" class="card__like-button button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -496,8 +497,8 @@
       <article class="card">
         <h2 class="card__title">«Сейчас я здесь»</h2>
         <div class="card__image">
-          <p class="card__image-text">&lt;I Will Survive&gt;</p>
-          <img class="card__image-img chess" src="./images/win.jpg" alt="Шахматы">
+          <span class="card__image-text">&lt;I Will Survive&gt;</span>
+          <img class="card__image-img invert" src="./images/chess.jpg" alt="Шахматы">
         </div>
         <p class="card__text">Сейчас вы уже очень много знаете о вёрстке. 
           Но это только начало. Во-первых, впереди ещё много материала про «красотищу». 
@@ -505,13 +506,13 @@
           Вёрстка — это целый мир. И этот мир постоянно меняется. Познать его полностью не получится, 
           но это тот случай, когда важен сам процесс познания. Ведь часто путь — и есть результат.
         </p>
-        <p class="card__text card__text-my-text">
+        <p class="card__text">
           Место, чтобы остановиться, подумать и написать, что вы чувствуете в этой точке пути.
           Наверное в этом месте я чувстую надежду и веру. Надежду на светлое будущее, на то,
           что у меня все получится. Что я смогу пройти этот путь до конца не выгорев и не заскучав!
         </p>
         <div class="like">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg class="like-icon"
               viewBox="0 0 39 36"
               width="39" 
@@ -547,23 +548,23 @@
                 </defs>
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button type="button" class="card__like-button button">
             <span class="button__text">Like</span>
           </button>
         </div>
       </article>
-    </main>
-    
-    <footer class="footer">
-      <button type="button" class="button footer__button"
-        onclick="window['dialog'].showModal();"
-        aria-controls="dialog">   
-          <svg class="floppy" viewBox="0 0 40 40" aria-hidden="true">
-            <use href="./svg/floppy.svg#floppy"></use>
-          </svg> 
-          <span class="footer__button-text">Сохранить на память</span>
-      </button>
-    </footer>
+
+      <div class="down">
+        <button type="button" class="button down__button"
+          onclick="window['dialog'].showModal();"
+          aria-controls="dialog">   
+            <svg class="floppy" viewBox="0 0 40 40" aria-hidden="true">
+              <use href="./svg/floppy.svg#floppy"></use>
+            </svg> 
+            <span class="down__button-text">Сохранить&nbspна&nbspпамять</span>
+        </button>
+      </div>
+    </main>  
     
     <dialog class="dialog" id="dialog">
       <div class="dialog__content">
@@ -572,11 +573,13 @@
         </svg>
         <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
       </div>
-      <button class="button dialog__button" 
-        onclick="window['dialog'].close();"
-        aria-controls="dialog">ок</button>
+      <form method="dialog">
+        <button type="button" class="button dialog__button" 
+          onclick="window['dialog'].close();"
+          aria-controls="dialog">ок</button>
+      </form>
     </dialog>
-   
+
     <script src="./scripts/like.js"></script>
   </body>
 </html>
