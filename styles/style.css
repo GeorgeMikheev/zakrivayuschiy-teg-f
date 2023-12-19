@@ -36,7 +36,7 @@
   display: flex;
   flex-direction: column;
   background-color: var(--background-color);
-  width: clamp(375px, 99vw, 700px) /*48.4vw*/;
+  width: clamp(350px, 95vw, 700px) /*48.4vw*/;
   border: 2px solid var(--text-color);
 }
 
@@ -261,6 +261,12 @@
 }
 
 @media (width <= 376px) {
+  
+  .header,
+  .card {
+    width: 100%;
+  }
+  
   .header {
     padding-block-start: 120px;
   }
